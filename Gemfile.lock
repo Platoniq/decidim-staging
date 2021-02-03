@@ -153,11 +153,6 @@ GIT
       vcr (~> 6.0)
       webmock (~> 3.6)
       wisper-rspec (~> 1.0)
-    decidim-elections (0.24.0.dev)
-      decidim-bulletin_board (= 0.8.2)
-      decidim-core (= 0.24.0.dev)
-      decidim-forms (= 0.24.0.dev)
-      decidim-proposals (= 0.24.0.dev)
     decidim-forms (0.24.0.dev)
       decidim-core (= 0.24.0.dev)
       wicked_pdf (~> 1.4)
@@ -340,12 +335,6 @@ GEM
     db-query-matchers (0.9.0)
       activesupport (>= 4.0, <= 6.0)
       rspec (~> 3.0)
-    decidim-bulletin_board (0.8.2)
-      byebug (~> 11.0)
-      graphlient (~> 0.4.0)
-      jwt (~> 2.2.2)
-      rails (>= 5.0.0)
-      wisper (~> 2.0.0)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
@@ -399,7 +388,7 @@ GEM
       rest-client (>= 1.6)
     eventmachine (1.2.7)
     eventmachine_httpserver (0.2.1)
-    excon (0.76.0)
+    excon (0.79.0)
     execjs (2.7.0)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
@@ -413,8 +402,6 @@ GEM
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
     faraday-net_http (1.0.1)
-    faraday_middleware (1.0.0)
-      faraday (~> 1.0)
     ffi (1.14.2)
     file_validators (2.3.0)
       activemodel (>= 3.2)
@@ -424,7 +411,7 @@ GEM
       fog-json (~> 1.1)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-core (2.2.0)
+    fog-core (2.2.3)
       builder
       excon (~> 0.71)
       formatador (~> 0.2)
@@ -454,14 +441,7 @@ GEM
     graphiql-rails (1.4.11)
       railties
       sprockets-rails
-    graphlient (0.4.0)
-      faraday (>= 1.0)
-      faraday_middleware
-      graphql-client
     graphql (1.12.3)
-    graphql-client (0.16.0)
-      activesupport (>= 3.0)
-      graphql (~> 1.8)
     hashdiff (1.0.1)
     hashie (4.1.0)
     highline (2.0.3)
@@ -471,7 +451,7 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
-    i18n (1.8.7)
+    i18n (1.8.8)
       concurrent-ruby (~> 1.0)
     i18n-tasks (0.9.33)
       activesupport (>= 4.0.2)
@@ -807,7 +787,7 @@ GEM
     temple (0.8.2)
     terminal-table (3.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    thor (1.0.1)
+    thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
     tomlrb (2.0.1)
@@ -861,7 +841,6 @@ DEPENDENCIES
   byebug
   decidim!
   decidim-dev!
-  decidim-elections!
   faker (~> 2.14)
   fog-aws
   letter_opener_web (~> 1.4.0)
@@ -880,7 +859,7 @@ DEPENDENCIES
   wkhtmltopdf-binary
 
 RUBY VERSION
-   ruby 2.7.1p83
+   ruby 2.7.2p137
 
 BUNDLED WITH
    2.1.4
