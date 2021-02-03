@@ -2,7 +2,7 @@
 
 Citizen Participation and Open Government application.
 
-This is the open-source repository for decidim_staging, based on [Decidim](https://github.com/decidim/decidim). This app is used to preview the latest `staging` branch of Codegram's Decidim [fork](https://github.com/codegram/decidim/tree/staging).
+This is the open-source repository for decidim_staging, based on [Decidim](https://github.com/decidim/decidim). This app is used to preview the latest `staging` branch of Platoniq's Decidim [fork](https://github.com/Platoniq/decidim/tree/staging).
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -10,7 +10,7 @@ This is the open-source repository for decidim_staging, based on [Decidim](https
 
 This application uses Heroku Review Apps to check new features individually and in isolation. In order to create a Review App:
 
-1. Go to the [Actions](https://github.com/codegram/decidim-staging/actions) tab
+1. Go to the [Actions](https://github.com/Platoniq/decidim-staging/actions) tab
 2. Select **Review app creator** and click on **Run workflow** button
 3. Fill in the **Decidim branch name** with the name of your feature branch
 4. Optional: add the Decidim issue number
@@ -20,7 +20,7 @@ This application uses Heroku Review Apps to check new features individually and 
 ## Updating the app
 Using the "Review App creator" can give some problems with migrations. You can use the "App updater" workflow to update and existing Review App with the last changes from the Decidim branch. In order to do it:
 
-1. Go to the [Actions](https://github.com/codegram/decidim-staging/actions) tab
+1. Go to the [Actions](https://github.com/Platoniq/decidim-staging/actions) tab
 2. Select **App updater** and click on **Run workflow** button
 3. Fill in the **Decidim branch name** with the name of your feature branch
 4. Click **Run workflow**
