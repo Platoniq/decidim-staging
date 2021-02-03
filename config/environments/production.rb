@@ -79,32 +79,36 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  if Rails.application.secrets.smtp_domain == "disable"
-    config.action_mailer.perform_deliveries = false
-  else
-    config.action_mailer.smtp_settings = {
-      :address        => Rails.application.secrets.smtp_address,
-      :port           => Rails.application.secrets.smtp_port,
-      :authentication => Rails.application.secrets.smtp_authentication,
-      :user_name      => Rails.application.secrets.smtp_username,
-      :password       => Rails.application.secrets.smtp_password,
-      :domain         => Rails.application.secrets.smtp_domain,
-      :enable_starttls_auto => Rails.application.secrets.smtp_starttls_auto,
-      :openssl_verify_mode => 'none'
-    }
+  # if Rails.application.secrets.smtp_domain == "disable"
+  #   config.action_mailer.perform_deliveries = false
+  # else
+  #   config.action_mailer.smtp_settings = {
+  #     :address        => Rails.application.secrets.smtp_address,
+  #     :port           => Rails.application.secrets.smtp_port,
+  #     :authentication => Rails.application.secrets.smtp_authentication,
+  #     :user_name      => Rails.application.secrets.smtp_username,
+  #     :password       => Rails.application.secrets.smtp_password,
+  #     :domain         => Rails.application.secrets.smtp_domain,
+  #     :enable_starttls_auto => Rails.application.secrets.smtp_starttls_auto,
+  #     :openssl_verify_mode => 'none'
+  #   }
 
-    if Rails.application.secrets.sendgrid
-      config.action_mailer.default_options = {
-        "X-SMTPAPI" => {
-          filters:  {
-            clicktrack: { settings: { enable: 0 } },
-            opentrack:  { settings: { enable: 0 } }
-          }
-        }.to_json
-      }
-    end
-  end
+  #   if Rails.application.secrets.sendgrid
+  #     config.action_mailer.default_options = {
+  #       "X-SMTPAPI" => {
+  #         filters:  {
+  #           clicktrack: { settings: { enable: 0 } },
+  #           opentrack:  { settings: { enable: 0 } }
+  #         }
+  #       }.to_json
+  #     }
+  #   end
+  # end
 
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.delivery_method = :letter_opener_web
+  config.action_mailer.perform_deliveries = true
+  
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')

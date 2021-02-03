@@ -22,6 +22,8 @@ gem "wkhtmltopdf-binary"
 
 gem "faker", "~> 2.14"
 
+gem "letter_opener_web", "~> 1.4"
+
 gem "puma"
 
 group :development, :test do
@@ -30,7 +32,6 @@ end
 
 group :development do
   gem "decidim-dev", DECIDIM_VERSION
-  gem "letter_opener_web", "~> 1.4.0"
   gem "listen", "~> 3.1.0"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"

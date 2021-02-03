@@ -843,7 +843,7 @@ DEPENDENCIES
   decidim-dev!
   faker (~> 2.14)
   fog-aws
-  letter_opener_web (~> 1.4.0)
+  letter_opener_web (~> 1.4)
   listen (~> 3.1.0)
   lograge
   puma
