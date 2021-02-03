@@ -11,9 +11,9 @@ on:
         required: false
         default: ''
       repository:
-        description: 'The repository where the branch is (default is decidim/decidim)'
+        description: 'The repository where the branch is (default is Platoniq/decidim)'
         required: false
-        default: 'decidim/decidim'
+        default: 'Platoniq/decidim'
 
 env:
   RUBY_VERSION: 2.7.2
