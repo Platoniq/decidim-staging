@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim
-  revision: 71e3ccd0c81acb6d8cdc69ee440d74a05c673abc
+  revision: 5469c52a5f5b5e8eba8f787eea160d3118704b60
   branch: develop
   specs:
     decidim (0.24.0.dev)
@@ -63,11 +63,11 @@ GIT
       redcarpet (~> 3.5, >= 3.5.1)
     decidim-core (0.24.0.dev)
       active_link_to (~> 1.0)
-      anchored (>= 1.1.0)
+      anchored (~> 1.1)
       autoprefixer-rails (~> 8.0)
       batch-loader (~> 1.2)
       browser (~> 2.7)
-      carrierwave (~> 2.1)
+      carrierwave (~> 2.1, >= 2.1.1)
       cells-erb (~> 0.1.0)
       cells-rails (~> 0.0.9)
       charlock_holmes (~> 0.7)
@@ -80,10 +80,10 @@ GIT
       doorkeeper-i18n (~> 4.0)
       etherpad-lite (~> 0.3)
       file_validators (~> 2.1)
-      fog-local
+      fog-local (~> 0.6)
       foundation-rails (~> 6.6, < 6.7)
       foundation_rails_helper (~> 3.0)
-      geocoder (>= 1.5)
+      geocoder (~> 1.5)
       hashdiff (>= 0.4.0, < 2.0.0)
       invisible_captcha (~> 0.12)
       jquery-rails (~> 4.4)
@@ -101,7 +101,7 @@ GIT
       pg (~> 1.1.4, < 2)
       pg_search (~> 2.2)
       premailer-rails (~> 1.10)
-      rack (>= 2.2.3)
+      rack (~> 2.2, >= 2.2.3)
       rack-attack (~> 6.0)
       rails (>= 5.2.4.4, < 6.0.x)
       rails-i18n (~> 5.0)
@@ -136,7 +136,7 @@ GIT
       mdl (~> 0.5)
       nokogiri (~> 1.11, >= 1.11.1)
       puffing-billy (~> 2.4.0)
-      puma (>= 4.3)
+      puma (~> 5.0)
       rails-controller-testing (~> 1.0)
       rspec-cells (~> 0.3.4)
       rspec-html-matchers (~> 0.9.1)
@@ -436,13 +436,13 @@ GEM
       activesupport (>= 4.1, < 6.0)
       railties (>= 4.1, < 6.0)
       tzinfo (~> 1.2, >= 1.2.2)
-    geocoder (1.6.4)
+    geocoder (1.6.5)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     graphiql-rails (1.4.11)
       railties
       sprockets-rails
-    graphql (1.12.3)
+    graphql (1.12.4)
     hashdiff (1.0.1)
     hashie (4.1.0)
     highline (2.0.3)
@@ -539,7 +539,7 @@ GEM
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
       tomlrb
-    mixlib-shellout (3.2.2)
+    mixlib-shellout (3.2.5)
       chef-utils
     multi_json (1.15.0)
     multi_xml (0.6.0)
