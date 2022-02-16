@@ -33,10 +33,12 @@ group :development do
   gem "web-console", "~> 4.0"
 
   gem "capistrano", "~> 3.14"
-  gem "capistrano-bundler", "~> 1.6"
-  gem "capistrano-passenger", "~> 0.2.0"
-  gem "capistrano-rails", "~> 1.5"
-  gem "capistrano-rbenv", "~> 2.1"
+  gem "capistrano-bundler"
+  gem "capistrano-passenger"
+  gem "capistrano-rails"
+  gem "capistrano-rails-console"
+  gem "capistrano-rbenv"
+  gem "capistrano-sidekiq"
 end
 
 
