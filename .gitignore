@@ -32,6 +32,7 @@
 
 # Ignore public uploads
 public/uploads
+public/decidim-packs
 
 # Do not track secrets in GIT
 /config/application.yml
