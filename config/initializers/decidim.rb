@@ -2,10 +2,8 @@
 
 Decidim.configure do |config|
   # The name of the application
-  config.application_name = "My Application Name"
-
-  # The email that will be used as sender in all emails from Decidim
-  config.mailer_sender = "change-me@example.org"
+  config.application_name = "Decidim at Platoniq"
+  config.mailer_sender = "noreply@platoniq.net"
 
   # Sets the list of available locales for the whole application.
   #
@@ -35,11 +33,12 @@ Decidim.configure do |config|
   # Map and Geocoder configuration
   #
   # == HERE Maps ==
-  # config.maps = {
-  #   provider: :here,
-  #   api_key: Rails.application.secrets.maps[:api_key],
-  #   static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
-  # }
+  config.maps = {
+    provider: :here,
+    static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" },
+    api_key: Rails.application.secrets.maps[:here_api_key]
+  }
+
   #
   # == OpenStreetMap (OSM) services ==
   # To use the OSM map service providers, you will need a service provider for
