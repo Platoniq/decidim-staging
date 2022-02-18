@@ -11,7 +11,7 @@ gem "decidim", "0.25.2"
 # gem "decidim-initiatives", "0.25.2"
 # gem "decidim-templates", "0.25.2"
 
-gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome"
+gem "decidim-decidim_awesome"
 
 gem "bootsnap", "~> 1.3"
 
